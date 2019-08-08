@@ -1,0 +1,225 @@
+/* CSS Reset */
+*{
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+}
+/*CABECARIO*/
+.header{
+  background-color: #c0392b;
+  background-image: linear-gradient(#c0392b, #e74c3c);
+}
+      .header--titulo{
+        color: aliceblue;
+        /* Aplicando sombra ao texto do titulo */
+        text-shadow: 0.5px 0.5px 1px #2b2727;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        padding: 30px;
+        text-align: center;
+
+      }
+        .header--titulo-bg_White{
+          color: #c0392b;
+          background-color: aliceblue;
+          font-family: 'Open Sans', sans-serif;
+          padding: 6px;
+          border-radius: 5px;
+        }
+    /*serie cover main page*/
+    .serie{
+    text-align: center;
+    }
+      .serie--titulo{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28px;
+        padding: 20px 0 2px;
+
+
+        }
+        .serie--genero{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #a9a4a4;
+            display: block;
+            padding: 2px 0 20px; 
+          }
+          .serie--imagem{
+              display: block;
+              max-width: 328px;
+              margin: 0 auto;
+              margin-bottom: 10px;
+              border-radius: 5px;
+
+              /* colocando sombra na imagem  */
+              -moz-box-shadow: 5px 10px 5px #888; 
+              -webkit-box-shadow: 5px 10px 5px #888;
+              box-shadow: 5px 5px 5px #888; 
+            }
+            .serie--readmore{
+              font-family: 'Roboto', sans-serif;
+              color: aliceblue;
+              background-color: #c0392b;
+              display:block;
+              text-decoration: none;
+              padding: 7px;
+              margin: 10px auto;
+              max-width: 328px;
+              border-radius: 6px;
+
+            }
+            .serie--readmore:hover{
+                background-color: #E74C3C;
+                
+
+            }
+/*Rodape do site*/
+    .footer{
+      background-color: #ffecdc;
+      color: #c0392b;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+    }
+      .footer--image{
+        max-width: 25px;
+        height: 25px;
+        /* padding-top: 10px; */
+        margin-right: 10px;
+        
+      }
+        .footer--element{
+          padding: 10px;
+        }
+
+
+    .serie{
+    text-align: center;
+    }
+      .serie--titulo{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28px;
+        padding: 20px 0 2px;
+
+
+        }
+        .serie--genero{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #a9a4a4;
+            display: block;
+            padding: 2px 0 20px; 
+          }
+          .serie--imagem{
+              display: block;
+              max-width: 328px;
+              margin: 0 auto;
+              margin-bottom: 10px;
+              border-radius: 5px;
+
+              /* colocando sombra na imagem  */
+              -moz-box-shadow: 5px 10px 5px #888; 
+              -webkit-box-shadow: 5px 10px 5px #888;
+              box-shadow: 5px 5px 5px #888; 
+            }
+            .serie--readmore{
+              font-family: 'Roboto', sans-serif;
+              color: aliceblue;
+              background-color: #c0392b;
+              display:block;
+              text-decoration: none;
+              padding: 7px;
+              margin: 10px auto;
+              max-width: 328px;
+              border-radius: 6px;
+
+            }
+            .serie--readmore:hover{
+                background-color: #E74C3C;
+
+            }
+
+/*serie cover mais page 02*/
+.serie_detalhe{
+   text-align: center;
+}
+
+                .serie_detalhe--titulo{
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 28px;
+                  padding: 20px 0 2px;
+              
+              
+                  }
+                  .serie_detalhe--genero{
+                      font-family: 'Open Sans', sans-serif;
+                      font-size: 16px;
+                      color: #a9a4a4;
+                      display: block;
+                      padding: 2px 0 20px; 
+                    }
+                    .serie_detalhe--imagem{
+                        display: block;
+                        max-width: 328px;
+                        margin: 0 auto;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+              
+                        /* colocando sombra na imagem  */
+                        -moz-box-shadow: 5px 10px 5px #888; 
+                        -webkit-box-shadow: 5px 10px 5px #888;
+                        box-shadow: 5px 5px 5px #888; 
+                      }
+                      .serie_detalhe--texto{
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 18px;
+                        line-height: 1.5;
+                        max-width: 328px;
+                        margin: 10px auto;
+                        text-align: left;
+
+                      }
+
+                      .serie_detalhe--whatchtrailer{
+                        font-family: 'Roboto', sans-serif;
+                        color: rgb(0, 0, 0);
+                        background-color: #e4cd02;
+                        display:block;
+                        text-decoration: none;
+                        padding: 7px;
+                        margin: 10px auto;
+                        max-width: 328px;
+                        border-radius: 6px;
+              
+                      }
+                      .serie_detalhe--whatchtrailer:hover{
+                          background-color: rgb(231, 235, 39);
+                          
+              
+                      }
+
+/*serie avaliação*/
+
+.serieAvaliacao{
+  background-color:  #ffecdc;
+}
+.serieAvaliacao--titulo{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  padding: 30px 0 10px;
+
+}
+.serieAvaliacao--imagens{
+  text-align: center;
+  padding: 30px;
+}
+.serieAvalicao--twitter{
+  margin: 0 50px;
+}
+.serieAvaliacao--percentual{
+  color: #27ae60;
+  font-size: 37px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
