@@ -1,17 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Listas</title>
+  <style>
+    * {padding: 0; margin: 0;
+      box-sizing: border-box;  
+    }
+
+    .menu{
+      background-color: #c03928;
+
+      /* removendo as bolinhas das listas  */
+      list-style: none;
+
+      /* alterando o display d alista de blok(um em cima do outro) para flex(eu ainda não sei o que é) */
+       display: flex;
+
+       /* flex-direction: column; */
+    }
+
+    /* APLICANDO RESPONSIVIDADE */
+    @media(max-width: 600px){
+      .menu{
+        flex-direction: column;
+      }
+    }
+    .menu__item a{
+      text-decoration: none;
+
+      padding: 20px;
+      /* mudando o display para inline-block que pe uma junção do display inline com o display block */
+      display: block;
+      color: #fff;
+    }
+
+    /* estado hover é quando quando você passa o mouse sobre ele) pode assumir aspectos (cores, fundos, etc... */
+    .menu__item:hover a {
+      background-color: #fff;
+      color: #c03928;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu"> 
+      <li class="menu__item"><a href="#">Inicio</a></li>
+      <li class="menu__item"><a href="#">Todas as Seŕies</a></li>
+      <li class="menu__item"><a href="#">Sobre</a></li>
+      <li class="menu__item"><a href="#">Contato</a></li>
+    </ul>
+</nav>
+
+  <h1>Listas ordenadas e não-ordenadas</h1>
+  
+  <!-- COMANDO PARA DECLARAR UMA LISTA DE TEXTOS NO HTML  -->
+  <!-- LISTAS NÃO ORDENADAS -->
+  <ol>
+    
+      <li>Lista de atividades de estágio</li>
+      <li>Solicitar matrícula</li>
+      <li>Realizar o estágio</li>
+      <li>Escrever o relatório</li>
+      <li>Apresentar o relatório ao orientador</li>
+  </ol>
+
+<!-- LISTA ORDENADA -->
+<H1>Lista de frutas</H1>
+  <ul>
+      <!-- DECLARAÇÃO DO ELEMENTO LISTA -->
+      
+      <li>Maça</li>
+      <li>Pera</li>
+      <li>Uva</li>
+      <li>Banana</li>
+
+  </ul>
+
+</body>
+</html>
+
+
+
 <!-- 
   Exercício 6: marcar as listas ordenada e não ordenada; realizar a estilização.
  -->
 
-Listas ordenadas e não-ordenadas
-    
-Lista de atividades de estágio
-Solicitar matrícula
-Realizar o estágio
-Escrever o relatório
-Apresentar o relatório ao orientador
 
-Lista de frutas
-Maça
-Pera
-Uva
-Banana
+    
+
