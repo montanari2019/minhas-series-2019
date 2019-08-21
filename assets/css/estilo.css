@@ -3,12 +3,16 @@
   padding: 0; margin: 0;
   box-sizing: border-box;
 }
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /*CABECARIO*/
 .header{
   background-color: #c0392b;
   background-image: linear-gradient(#c0392b, #e74c3c);
 }
-      .header--titulo{
+      .header__titulo{
         color: aliceblue;
         /* Aplicando sombra ao texto do titulo */
         text-shadow: 0.5px 0.5px 1px #2b2727;
@@ -18,12 +22,39 @@
         text-align: center;
 
       }
-        .header--titulo-bg_White{
+      @media(min-width: 600px){
+        .header__titulo{
+          text-align: left;
+        }
+
+      }
+        .header__titulo--bg_White{
           color: #c0392b;
           background-color: aliceblue;
           font-family: 'Open Sans', sans-serif;
           padding: 6px;
           border-radius: 5px;
+        }
+        .menu{
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+
+        }
+        @media(min-width: 600px){
+          .menu{
+            flex-direction: row;
+          }
+        }
+        .menu__item > a{
+          padding: 20px;
+          text-decoration: none;
+          color: #ffecdc;
+          display: block;
+        }
+        .menu__item > a:hover{
+          color:#c0392b;
+          background-color: #fff;
         }
     /*serie cover main page*/
     .serie{
