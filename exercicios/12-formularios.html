@@ -1,8 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trabalhando com Formulários</title>
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .campo{
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid royalblue;
+    color: brown;
+  }
+  .container-campo{
+    margin: 20px;
+    /* padding: 20px; */
+  }
+  .label{
+    color: royalblue;
+    display: inline-block;
+    min-width: 110px;
+    
+  }
+  .observation{
+    display: flex;
+
+  }
+  .campo--texto{
+    border: 2px solid royalblue;
+    resize: none;
+  }
+  .btn__salvar{
+    border: 0;
+    padding: 15px;
+    color: aliceblue;
+    background-color: hsl(140, 84%, 17%);
+    border-radius: 5px 15px;
+    cursor: pointer;
+  }
+  .btn__salvar:hover{
+    color: #064f1f;
+    background-color: #d7f7e2;
+  }
+  .estados{
+    color: royalblue;
+    min-width: 150px;;
+  }
+  .estados__option:hover{
+    background: royalblue;
+    color: aliceblue;
+  }
+  </style>
+</head>
+<body>
+  <form>
+
+
+    <div class="container-campo">
+      <label class="label" for="nome">Nome:</label>
+      <input type="text" class="campo" id="nome" required>
+    </div>
+
+
+    <div class="container-campo">
+        <label class="label" for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome">
+      </div>
+
+
+      <div class="container-campo">
+        <label class="label" for="fone">Fone:</label>
+        <input type="text" id="fone" pattern="^[0-9]{5}-[0-9]{4}" placeholder="99645-9547">
+      </div>
+
+
+    <div class="container-campo">
+      <label class="label" for="">Sexo:</label>
+      <input type="radio" id="sexo-masc" name="sexo">
+      <label for="sex-masc">Masculino</label>
+      <input type="radio" id="sexo-fem" name="sexo" checked>
+      <label for="sex-fem">Feminino</label>
+    </div>
+
+
+    <div class="container-campo">
+      <input type="checkbox" id="email">
+      <label class="label" for="email">Deseja receber emails?</label>
+    </div>
+
+
+    <div class="container-campo">
+      <label class="label" for="estado">Estado:</label>
+      <select  id="estado" class="estado">
+        <option value="AC">Acre</option>
+        <option value="AM">Amazonas</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+      </select>
+    </div>
+
+
+    <div class="container-campo observation">
+      <label class="label" for="obs">Observações</label>
+      <textarea  id="obs" cols="30" rows="10" class="campo--texto"></textarea>
+    </div>
+
+
+    <div class="container-campo">
+    
+      <input type="submit" class="btn__salvar" value="Cadastrar" id="cadastrar">
+
+    </div>
+
+
+  </form>
+</body>
+</html>
 <!-- 
   Exercício 11: construa o fomulário; faça a estilização.
  -->
 
- Formulários
+ <!-- Formulários
 Nome:
 Idade:
 Sexo: (masculino, feminino)
@@ -14,4 +137,4 @@ Estado:
   - Roraima
   - Tocantins
 Mensagem:
-Aceita os termos do contrato?
+Aceita os termos do contrato? -->

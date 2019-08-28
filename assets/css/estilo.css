@@ -103,6 +103,7 @@
               margin: 10px auto;
               max-width: 328px;
               border-radius: 6px;
+              
 
             }
             .serie__readmore:hover{
@@ -112,6 +113,7 @@
             }
 /*Rodape do site*/
     .footer{
+      margin-top: 10px;
       background-color: #ffecdc;
       color: #c0392b;
       font-family: 'Roboto', sans-serif;
@@ -126,6 +128,30 @@
       }
         .footer__element{
           padding: 10px;
+        }
+
+        .caixa_email{
+          border: 1px solid #c0392b;
+          border-radius: 4px;
+          padding: 5px;
+          border-radius: 5px 0 0 5px;
+          background-color: #EEEEEE;
+          width: 278px;
+          height: 33px;
+          left: 33px;
+          top: 2820px
+
+
+        }
+        .caixa_email--btn__cadastar{
+          padding: 8px;
+          border: 1px solid #c0392b;
+          border-radius: 0 5px 5px 0;
+          color: #ffecdc;
+          background-color:#c0392b;
+          margin: -10px;
+          
+
         }
 
     .series{
